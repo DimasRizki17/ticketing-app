@@ -18,6 +18,6 @@ class DashboardController extends Controller
         $totalEvents = Event::count();
         $totalCategories = \App\Models\Kategori::count();
         $totalOrders = Order::count();
-        return view('pages.admin.dashboard', compact('totalEvents', 'totalCategories', 'totalOrders'));
+        return view('admin.dashboard', compact('totalEvents', 'totalCategories', 'totalOrders'));
     }
 }
