@@ -29,6 +29,18 @@
 	            </a>
             </li>
 
+            <!-- Tipe Pembayaran item -->
+            <li class="{{ request()->routeIs('admin.payment-types.*') ? 'bg-gray-200 rounded-lg' : '' }}">
+                <a href="{{ route('admin.payment-types.index') }}" class="is-drawer-close:tooltip is-drawer-close:tooltip-right"data-tip="Tipe Pembayaran">
+
+            <!-- icon Payment -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 6h18a2 2 0 0 1 2 2v2H1V8a2 2 0 0 1 2-2m20 6v4a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-4zm-14 3h4v-2H9z"/>
+                    </svg>
+                    <span class="is-drawer-close:hidden">Manajemen Tipe Pembayaran</span>
+                </a>
+            </li>
+
             <!-- Event item -->
             <li class="{{ request()->routeIs('admin.events.*') ? 'bg-gray-200 rounded-lg' : '' }}">
 	            <a href="{{ route('admin.events.index') }}" class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Event">
